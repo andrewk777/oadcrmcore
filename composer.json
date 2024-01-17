@@ -1,6 +1,6 @@
 {
     "name": "oadsoft/crmcore",
-    "description": "Laravel files for core crm setup",
+    "description": "Laravel files for core crm setup ",
     "type": "library",
     "license": "MIT",
     "autoload": {
