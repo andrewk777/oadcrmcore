@@ -1,0 +1,68 @@
+.top-bar {
+    position: fixed;
+    height: $tbHeight;
+    top: 0px;
+    left: $menuWidth;
+    right: 0px;
+    z-index: 98;
+    background-color: #fff;
+    // box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+    box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.top-right-menu {
+    float:right;
+    padding-right: 10px;
+
+    > ul > li {
+        
+        height: $tbHeight;
+        line-height: $tbHeight;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: inline-block;
+
+        i {
+            background: #e1e1e1;
+            padding-left: 6px;
+            border-radius: 50%;
+            font-size: 17px;
+            border: 1px solid #e1e1e1;
+            width: 29px;
+            height: 29px;
+            padding-top: 6px;
+            cursor: pointer;
+        }
+    }
+}
+.dd-menu > ul > li {
+
+    line-height: 20px;
+    padding: 5px 0px;
+
+    &:hover {
+        background-color: rgba(151,166,186,.12);
+    }
+
+    span,
+    a {
+        display: block;
+        padding: 10px 15px;
+        white-space: nowrap;
+        font-size: 15px;
+    }
+
+    i {
+        padding: 0px;
+        background: none;
+        border: none;
+        height: auto;
+        width: auto;
+        margin-right: 10px;
+    }
+}
+.dropdown-menu {
+    border-color: #e2e8f0;
+    border-radius: 4px;
+    padding: 0px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+}

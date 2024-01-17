@@ -1,0 +1,26 @@
+@keyframes onLoad {
+    0% { margin-bottom: 20%; opacity: 0.3; }
+    100% { margin-bottom: 15%; opacity: 1;  }
+}
+@keyframes backendMount {
+    0% { 
+        margin: auto;
+        scale: (0.95);
+        opacity: 0; 
+    }
+    100% { 
+        scale: (1);
+        opacity: 1; 
+    }
+}
+@keyframes formDismount {
+    0% { 
+        scale: (1);
+        opacity: 1; 
+    }
+    100% { 
+        margin: auto;
+        scale: (0.80);
+        opacity: 0; 
+    }
+}

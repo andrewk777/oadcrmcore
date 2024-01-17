@@ -1,0 +1,91 @@
+html, body, #app, .content-wrap {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.notices .toast .toast-text {
+    min-width: 200px;
+    text-align: center;
+}
+.btn:disabled {
+    cursor: not-allowed;
+}
+.btn {
+    padding: 0.3rem 0.75rem;
+    font-size: 15px;
+    border-radius: 0.2rem;
+}
+a:hover {
+    text-decoration: none;
+}
+.card {
+    border-radius: $borderRadius;
+    padding: 24px 24px 16px;
+    box-shadow: 0 4px 20px 1px rgba(0,0,0,.06),0 1px 4px rgba(0,0,0,.08);
+    border: none;
+}
+.onComponentLoad {
+    animation: $componentAnimation;
+}
+.closeFormActivate {
+    animation: $formAnimationClose;
+    opacity: 0; 
+}
+.noScroll {
+    position: fixed;
+}
+.onComponentLoadFront {
+    animation: $frontComponentAnimation;
+}
+.container {
+    max-width: 100% !important;
+}
+.table {
+    margin-bottom: 0px;
+}
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: none !important;
+}
+.swal2-popup {
+    padding: 40px 20px !important;
+}
+
+.dropdown-menu {
+    border-color: $primary !important;
+    border-radius: 0.2rem !important;
+    box-shadow: 0 2px 4px -1px rgba(66, 56, 157, 0.45) !important;
+    > li {
+        padding: 0px;
+    }
+}
+a.dropdown-item {
+    padding: 8px 15px;
+}
+a.dropdown-item:hover {
+    background-color: $hoverBg;
+    color: $hoverColor;
+}
+.badge {
+    font-size: 90%;
+    padding: 5px 10px;
+}
+.pointer {
+    cursor: pointer;
+}
+.flex-basis-100 {
+    flex-basis: 100%;
+}
+.bold {
+    font-weight: bold;
+}
+.btn-outline-warning:hover {
+    color: #fff;
+}
+.nowrap {
+    white-space:nowrap;
+}

@@ -1,0 +1,100 @@
+@keyframes secMenuOpen {
+    0% { left: -300px  }
+    100% { left: $menuWidth;  }
+}
+@keyframes secMenuClose {
+    from { left: $menuWidth; }
+    to { left: -300px }
+}
+
+.menu {
+
+    color: $menuFontColor;
+    position: fixed;
+    width: $menuWidth;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 100;
+    background-color: $primary;
+    overflow-y: auto;
+    scrollbar-color: #7069b9 $primary;
+    scrollbar-width: thin;
+    border-right: 1px solid rgba(241,245,249,.12);
+    box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.25);
+
+    > ul > li {
+
+        padding: 5px 10px;
+
+        > a {
+            display: block;
+            font-size: 15px;
+            color: $menuFontColor;
+            padding: 5px 0px;
+            text-align: center;
+            border-radius: 5px;
+
+            > i {
+                padding-top: 3px;
+                font-size: 35px;
+                display: block;
+            }
+        }
+        .active {
+            background-color: $menuSelectedBgColor;
+            color: $menuHoverFontColor;
+        }
+        :hover {
+            background-color: $menuHoverBgColor;
+            color: $menuHoverFontColor;
+        }
+    }
+    
+}
+.secondary-menu {
+
+    position: fixed;
+    min-width: $secMenuWidth;
+    top: 0px;
+    bottom: 0px;
+    z-index: 99;
+    background-color: $primary;
+    animation: secMenuClose 0.3s;
+    left: -300px;
+    box-shadow: 0 4px 20px 1px rgba(0,0,0,.25),0 1px 4px rgba(0,0,0,.25);
+    padding: 5px 10px;
+
+    &.opened {
+        animation: secMenuOpen 0.5s;
+        left: $menuWidth;
+    }
+
+    > ul > li {
+
+        padding: 3px;
+
+        a {
+            color: $menuFontColor;
+            white-space: nowrap;
+            display: block;
+            font-size: 15px;
+            padding: 5px 10px;
+            border-radius: 3px
+        }
+        .active {
+            background-color: $menuSelectedBgColor;
+            color: $menuHoverFontColor;
+        }
+        :hover {
+            background-color: $menuHoverBgColor;
+            color: $menuHoverFontColor;
+        }
+    }
+}
+
+img.logo {
+    width: 75px;
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,44 @@
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: $menuWidth;
+    padding-top: $tbHeight;
+}
+.content {
+    flex-grow: 1;
+    padding: $contentPadding;
+    background-color: $conentBgColor
+}
+.panel-title-wrap {
+    padding-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $hrColor;
+}
+.component-page {
+    position: fixed;
+    top: $tbHeight;
+    left: $menuWidth;
+    right: 0;
+    bottom: 0;
+    padding: $contentPadding;
+    background-color: $conentBgColor;
+    z-index: 95;
+}
+.form-content {
+    position: relative;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+.component-page form {
+     height: 100%;
+}
+.card-title {
+    font-size: 18px;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+    padding-bottom: 10px;
+}

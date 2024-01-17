@@ -1,0 +1,17 @@
+
+.login-box {
+    animation: onLoad 0.7s;
+    width: 370px;
+    border-radius: $borderRadius;
+    margin-bottom: 15%;
+    background-color: #ffffff;
+
+    img {
+        max-width: 100%;
+    }
+}
+body.front {
+    background-image: url('/images/login-bgs/main.jpg');
+    background-size: cover; 
+    background-position: center center;
+}

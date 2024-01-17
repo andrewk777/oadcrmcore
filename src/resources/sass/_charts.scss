@@ -1,0 +1,16 @@
+.chart-loader {
+    position: absolute;
+    text-align: center;
+    color: $panelLoaderColor;
+    width: 100%;
+    height: 100%;
+    background: $panelLoaderBg;
+    z-index: 105;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div {
+        width: 100%;
+    }
+}

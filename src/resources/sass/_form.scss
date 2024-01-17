@@ -1,0 +1,156 @@
+
+@import "vue-select/src/scss/vue-select.scss";
+
+.form-control {
+    color: #47404f;
+    font-size: 15px;
+    padding: .375rem .6rem;
+
+}
+.input-group-text,
+.form-control {
+    background-color: $fieldBgColor;
+    border: none;
+    border-bottom: 1px solid $fieldBorderColor;
+    border-radius: $fieldBorderRadius;
+    height: $fieldHeight;
+}
+.input-group {
+    border-bottom: 1px solid #fff;
+}
+.input-group:focus-within {
+    border-bottom: 1px solid $primary;
+}
+
+.form-loader {
+    position: fixed;
+    text-align: center;
+    color: $panelLoaderColor;
+    width: 100%;
+    height: 100%;
+    background: $panelLoaderBg;
+    z-index: 95;
+
+    div {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+    }
+}
+legend {
+    font-size: 13px;
+    color: #70657b;
+    margin-bottom: 4px;
+}
+.required-asterisk {
+    color: red;
+}
+
+.vs__dropdown-toggle {
+    height: $fieldHeight;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px solid #ced4da;
+    border-radius: $fieldBorderRadius;
+    background-color: $fieldBgColor;
+    padding: 3px;
+}
+.enhancedCheck label {
+    border: none !important;
+    height: $fieldHeight !important;
+    padding-left: 40px !important;
+}
+.enhancedCheck label::before {
+    border-radius: $fieldBorderRadius !important;
+    background-color: $fieldBgColor !important;
+    border: 1px solid #e7eaec;
+}
+input[type="radio"]:checked + label::before, .enhancedCheck.enhancedCheck-success input[type="checkbox"]:checked + label::before {
+    color: $primary !important;
+    border-color: #cfcde6 !important;
+}
+input[type="radio"]:checked + label::before, .enhancedCheck.enhancedCheck-success input[type="checkbox"]:checked + label::before,
+input[type="radio"] + label::before, .enhancedCheck.enhancedCheck-success input[type="checkbox"] + label::before {
+    padding-top: 3px;
+}
+.selected-options {
+    background-color: $primary !important;
+}
+.file-drop {
+    border: 1px solid $fieldBorderColor; 
+    border-radius: $fieldBorderRadius;
+	text-align: center;
+	padding: 4.5px 0px;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $primary25t;
+        border-color: $primary;
+        color: #fff;
+    }
+}
+.form-control:focus {
+    border-bottom: 1px solid $primary !important;
+    box-shadow: none;
+}
+.input-group .form-control:focus {
+    border-bottom: 1px solid $fieldBorderColor !important;
+    box-shadow: none;
+}
+.select-loader {
+    font-size: 10px;
+    padding-left: 4px;
+    opacity: 0.5;
+}
+.date-time-picker {
+    border-radius: $fieldBorderRadius !important;
+
+    .field-input {
+        border: none !important;
+        border-bottom: 1px solid $fieldBorderColor !important;
+        height: $fieldHeight !important;
+        min-height: $fieldHeight !important;
+        padding: 0 7px !important;
+        border-radius: $fieldBorderRadius !important;
+    }
+}
+.date-time-picker.noButtons .datepicker-buttons-container {
+    padding: 0px
+}
+.enhancedCheck div {
+    margin: 0px !important;
+}
+.field-description {
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+    position: absolute;
+    background: #fff;
+    width: calc(100% - 30px);
+    padding: 7px 20px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+    z-index: 10;
+}
+.v-toast-text {
+    ul {
+        padding-left: 20px;
+    }
+}
+.notes_list_container {
+
+    max-height: 250px;
+    overflow-y: auto;
+    
+    .note-author {
+        color: #814382;
+    }
+    .note-detail {
+        background: #fbfbfb;
+    }
+}
+.vs__dropdown-toggle{
+    min-height: $fieldHeight;
+    height: auto;
+}
