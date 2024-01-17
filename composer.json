@@ -2,6 +2,7 @@
     "name": "oadsoft/crmcore",
     "description": "Laravel files for core crm setup",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Oadsoft\\Crmcore\\": "src/"
