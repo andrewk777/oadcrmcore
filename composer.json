@@ -1,0 +1,16 @@
+{
+    "name": "oadsoft/crmcore",
+    "description": "Laravel files for core crm setup",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Oadsoft\\Crmcore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrew Korneychuk"
+        }
+    ],
+    "require": {}
+}
